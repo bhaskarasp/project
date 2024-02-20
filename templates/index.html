@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Chatbot</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Internal stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        #chat-container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            color: #1e90ff;
+        }
+        #chat-output {
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .chat-message {
+            margin-bottom: 10px;
+        }
+        .chat-message p {
+            margin: 0;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .user-message p {
+            background-color: #1e90ff;
+            color: white;
+        }
+        .bot-message p {
+            background-color: #f1f1f1;
+        }
+        #chat-form input[type="text"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+        }
+        #chat-form button[type="submit"] {
+            width: 60px;
+            height: 36px;
+            border-radius: 20px;
+            border: none;
+            background-color: #1e90ff;
+            color: white;
+            font-weight:bold
+        }
+    </style>
+</head>
+<body>
+    <!-- Chat container -->
+    <div id="chat-container">
+        <!-- Chat title -->
+        <h1>Healthcare Chatbot</h1>
+        <!-- Chat output area -->
+        <div id="chat-output"></div>
+        <!-- Chat form -->
+        <form id="chat-form">
+            <!-- Chat input field -->
+            <input type="text" id="chat-input" placeholder="Type your message here...">
+            <!-- Chat submit button -->
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <!-- Link to external JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

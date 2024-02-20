@@ -1,0 +1,76 @@
+/* Set the font and background color for the entire page */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style the chat container */
+#chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the chat output area */
+#chat-output {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Style the chat messages */
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.chat-message p {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Style user messages */
+.user-message {
+    text-align: right;
+}
+
+.user-message p {
+    background-color: #1e90ff;
+    color: white;
+}
+
+/* Style bot messages */
+.bot-message {
+    text-align: left;
+}
+
+.bot-message p {
+    background-color: #f1f1f1;
+}
+
+/* Style the chat form */
+#chat-form {
+    display: flex;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Style the submit button */
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+}
